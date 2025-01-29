@@ -1,12 +1,11 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* Fuente principal */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)); /* Degradado oscuro */
-    color: #fff; /* Texto claro para resaltar sobre fondo oscuro */
-    line-height: 1.6; /* Mejora la legibilidad */
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9); /* Sombra interna para dar más profundidad */
+    min-height: 100vh;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -24,8 +23,8 @@ body {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Hace que los títulos sean más gruesos */
-    color: #007bff; /* Color azul para destacar */
+    font-weight: 700;
+    color: #007bff;
     font-size: 30px;
 }
 
@@ -89,11 +88,11 @@ input[type="button"]:hover {
 
 .image-section{
     width: 40%;
-    max-width: 300px; /* Limita el tamaño máximo de la imagen */
+    max-width: 300px;
     height: auto;
     margin: 20px 0;
-    border: 4px solid rgb(0, 174, 255); /* Cambié el color a rojo para asegurarte de que sea visible */
-    border-radius: 10px; /* Opcional: redondear las esquinas */
+    border: 4px solid rgb(0, 174, 255);
+    border-radius: 10px;
 }
 
 
@@ -105,24 +104,23 @@ input[type="button"]:hover {
     }
 
     .form-section {
-        width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+        width: 90%;
         margin: 10px;
     }
 
     .image-section {
-        max-width: 250px; /* Reducir tamaño de imagen en pantallas pequeñas */
+        max-width: 250px;
     }
 }
 
-/* Media Query para pantallas grandes */
 @media (min-width: 1024px) {
     .form-container {
-        flex-direction: row; /* Usa filas en pantallas grandes */
+        flex-direction: row;
         justify-content: space-around;
     }
 
 
     .image-section {
-        max-width: 350px; /* Aumenta el tamaño máximo de las imágenes en pantallas grandes */
+        max-width: 350px;
     }
 }
