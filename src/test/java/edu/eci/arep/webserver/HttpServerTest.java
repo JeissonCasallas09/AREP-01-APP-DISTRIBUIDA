@@ -54,7 +54,8 @@ public class HttpServerTest {
             StringBuilder response = new StringBuilder();
             while ((responseLine = in.readLine()) != null) {
                 response.append(responseLine).append("\n");
-                if (responseLine.isEmpty()) break;
+                if (responseLine.isEmpty())
+                    break;
             }
 
             assertTrue(response.toString().contains("HTTP/1.1 200 OK"));
@@ -77,7 +78,8 @@ public class HttpServerTest {
             StringBuilder response = new StringBuilder();
             while ((responseLine = in.readLine()) != null) {
                 response.append(responseLine).append("\n");
-                if (responseLine.isEmpty()) break;
+                if (responseLine.isEmpty())
+                    break;
             }
 
             assertTrue(response.toString().contains("HTTP/1.1 200 OK"));
@@ -100,7 +102,8 @@ public class HttpServerTest {
             StringBuilder response = new StringBuilder();
             while ((responseLine = in.readLine()) != null) {
                 response.append(responseLine).append("\n");
-                if (responseLine.isEmpty()) break;
+                if (responseLine.isEmpty())
+                    break;
             }
 
             assertTrue(response.toString().contains("HTTP/1.1 500 Internal Server Error"));
